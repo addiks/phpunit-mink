@@ -1,5 +1,5 @@
 {
-  "name": "cbb0/phpunit-mink",
+  "name": "addiks/phpunit-mink",
   "description": "Library for using Mink in PHPUnit tests. Supports session sharing between tests in a test case.",
   "keywords": ["PHPUnit", "Selenium", "SauceLabs", "Sauce", "BrowserStack", "Mink", "Tests"],
   "homepage": "http://github.com/minkphp/phpunit-mink",
@@ -13,11 +13,11 @@
   ],
 
   "require": {
-    "php": ">=7.1",
+    "php": ">=8.1",
     "behat/mink": "~1.6@dev",
     "behat/mink-selenium2-driver": "~1.2",
     "symfony/event-dispatcher": "~2.4|~3.0",
-    "phpunit/phpunit": "~6.1"
+    "phpunit/phpunit": "~9.5"
   },
 
   "require-dev": {
@@ -37,11 +37,6 @@
       "tests\\aik099\\PHPUnit\\": "tests/aik099/PHPUnit",
       "tests\\PimpleCopy\\Pimple\\": "tests/PimpleCopy/Pimple"
     }
-  },
-
-  "extra": {
-    "branch-alias": {
-      "dev-master": "2.1.x-dev"
-    }
   }
+
 }

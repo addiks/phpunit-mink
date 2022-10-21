@@ -31,7 +31,7 @@ class ApplicationAwareTestCase extends MockeryTestCase
 	 *
 	 * @return void
 	 */
-	protected function setUp()
+	protected function setUp(): void
 	{
 		parent::setUp();
 

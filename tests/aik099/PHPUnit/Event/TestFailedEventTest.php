@@ -29,7 +29,7 @@ class TestFailedEventTest extends TestEventTest
 	 *
 	 * @return void
 	 */
-	protected function setUp()
+	protected function setUp(): void
 	{
 		$this->_exception = new Exception();
 

@@ -52,7 +52,7 @@ class SharedSessionStrategyTest extends SessionStrategyTestCase
 	 *
 	 * @return void
 	 */
-	protected function setUp()
+	protected function setUp(): void
 	{
 		$this->_session1 = $this->createSession();
 		$this->_session2 = $this->createSession();

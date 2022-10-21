@@ -179,7 +179,7 @@ abstract class BrowserTestCase extends AbstractPHPUnitCompatibilityTestCase impl
 	 *
 	 * @return void
 	 */
-	protected function setUp()
+	protected function setUp(): void
 	{
 		parent::setUp();
 
@@ -305,12 +305,8 @@ abstract class BrowserTestCase extends AbstractPHPUnitCompatibilityTestCase impl
 	 * Runs the test case and collects the results in a TestResult object.
 	 *
 	 * If no TestResult object is passed a new one will be created.
-	 *
-	 * @param TestResult $result Test result.
-	 *
-	 * @return TestResult
 	 */
-	public function run(TestResult $result = null)
+	public function run(TestResult $result = null): TestResult
 	{
 		if ( $result === null ) {
 			$result = $this->createResult();

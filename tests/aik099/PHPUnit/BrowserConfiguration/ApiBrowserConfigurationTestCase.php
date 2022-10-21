@@ -46,7 +46,7 @@ abstract class ApiBrowserConfigurationTestCase extends BrowserConfigurationTest
 	 *
 	 * @return void
 	 */
-	protected function setUp()
+	protected function setUp(): void
 	{
 		$this->testsRequireSubscriber[] = 'testTestSetupEvent';
 		$this->testsRequireSubscriber[] = 'testTestEndedEvent';

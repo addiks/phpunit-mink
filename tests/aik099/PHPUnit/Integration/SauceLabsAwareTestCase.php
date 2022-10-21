@@ -30,7 +30,7 @@ abstract class SauceLabsAwareTestCase extends BrowserTestCase
 	 *
 	 * @return void
 	 */
-	protected function setUp()
+	protected function setUp(): void
 	{
 		if ( !getenv('SAUCE_USERNAME') || !getenv('SAUCE_ACCESS_KEY') ) {
 			$this->markTestSkipped('SauceLabs integration is not configured');

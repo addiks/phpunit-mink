@@ -26,7 +26,7 @@ class DriverFactoryRegistryTest extends MockeryTestCase
 	 */
 	private $_driverFactoryRegistry;
 
-	public function setUp()
+	public function setUp(): void
 	{
 		parent::setUp();
 

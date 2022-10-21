@@ -18,7 +18,7 @@ use tests\aik099\PHPUnit\Fixture\SetupEventFixture;
 class EventDispatchingTest extends MockeryTestCase
 {
 
-	protected function setUp()
+	protected function setUp(): void
 	{
 		parent::setUp();
 

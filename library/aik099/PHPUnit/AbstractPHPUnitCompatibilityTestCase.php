@@ -32,7 +32,7 @@ abstract class AbstractPHPUnitCompatibilityTestCase extends TestCase
      *
      * @return void
      */
-    protected function onNotSuccessfulTest(\Throwable $e)
+    protected function onNotSuccessfulTest(\Throwable $e): void
     {
         $this->onNotSuccessfulTestCompatibilized($e);
 

@@ -26,7 +26,7 @@ class SetupEventFixture extends BrowserTestCase
 	 *
 	 * @return void
 	 */
-	protected function setUp()
+	protected function setUp(): void
 	{
 		$api_client = m::mock('aik099\\PHPUnit\\APIClient\\IAPIClient');
 		$api_client->shouldReceive('updateStatus')->withAnyArgs()->once();

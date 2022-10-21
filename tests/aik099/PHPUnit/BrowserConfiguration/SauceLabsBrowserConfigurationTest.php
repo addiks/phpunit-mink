@@ -23,7 +23,7 @@ class SauceLabsBrowserConfigurationTest extends ApiBrowserConfigurationTestCase
 	 *
 	 * @return void
 	 */
-	protected function setUp()
+	protected function setUp(): void
 	{
 		$this->browserConfigurationClass = 'aik099\\PHPUnit\\BrowserConfiguration\\SauceLabsBrowserConfiguration';
 

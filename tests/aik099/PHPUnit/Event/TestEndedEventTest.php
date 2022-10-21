@@ -29,7 +29,7 @@ class TestEndedEventTest extends TestEventTest
 	 *
 	 * @return void
 	 */
-	protected function setUp()
+	protected function setUp(): void
 	{
 		$this->_testResult = new TestResult();
 

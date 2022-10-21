@@ -23,7 +23,7 @@ class BrowserStackBrowserConfigurationTest extends ApiBrowserConfigurationTestCa
 	 *
 	 * @return void
 	 */
-	protected function setUp()
+	protected function setUp(): void
 	{
 		$this->browserConfigurationClass = 'aik099\\PHPUnit\\BrowserConfiguration\\BrowserStackBrowserConfiguration';
 
