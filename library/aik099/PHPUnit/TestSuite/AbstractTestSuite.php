@@ -19,6 +19,7 @@ use aik099\PHPUnit\Session\SessionStrategyManager;
 use PHPUnit\Framework\DataProviderTestSuite;
 use PHPUnit\Framework\TestSuite;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use PHPUnit\Util\Test as TestUtil;
 
 /**
  * Base Test Suite class for browser tests.
@@ -66,6 +67,10 @@ abstract class AbstractTestSuite extends TestSuite implements IEventDispatcherAw
 		$class = new \ReflectionClass($class_name);
 
 		foreach ( $class->getMethods(\ReflectionMethod::IS_PUBLIC) as $method ) {
+            if (!TestUtil::isTestMethod($method)) {
+                continue;
+            }
+            
 			$this->addTestMethod($class, $method);
 		}
 
