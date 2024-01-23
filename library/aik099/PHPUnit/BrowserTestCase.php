@@ -184,7 +184,7 @@ abstract class BrowserTestCase extends AbstractPHPUnitCompatibilityTestCase impl
 		parent::setUp();
 
 		$this->_eventDispatcher->dispatch(
-			new TestEvent($this)
+			new TestEvent($this),
 			self::TEST_SETUP_EVENT,
 		);
 	}
@@ -374,7 +374,7 @@ abstract class BrowserTestCase extends AbstractPHPUnitCompatibilityTestCase impl
 	public function onTestSuiteEnded()
 	{
 		$this->_eventDispatcher->dispatch(
-			new TestEvent($this, $this->_session)
+			new TestEvent($this, $this->_session),
 			self::TEST_SUITE_ENDED_EVENT,
 		);
 
@@ -419,7 +419,7 @@ abstract class BrowserTestCase extends AbstractPHPUnitCompatibilityTestCase impl
 	protected function onNotSuccessfulTestCompatibilized(\Throwable $e)
 	{
 		$this->_eventDispatcher->dispatch(
-			new TestFailedEvent($e, $this, $this->_session)
+			new TestFailedEvent($e, $this, $this->_session),
 			self::TEST_FAILED_EVENT,
 		);
 	}
