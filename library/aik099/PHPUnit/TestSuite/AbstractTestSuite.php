@@ -105,9 +105,7 @@ abstract class AbstractTestSuite extends TestSuite implements IEventDispatcherAw
 					$remote_coverage_helper,
 					$test->tests()
 				);
-			}
-			else {
-				/** @var BrowserTestCase $test */
+			} elseif ($test instanceof BrowserTestCase) {
 				$test->setEventDispatcher($this->_eventDispatcher);
 				$test->setSessionStrategyManager($session_strategy_manager);
 				$test->setBrowserConfigurationFactory($browser_configuration_factory);
